@@ -4,19 +4,13 @@ import Users from './Users';
 import UsersContext from '../store/users-context';
 import classes from './UserFinder.module.css';
 
-const DUMMY_USERS = [
-  { id: 'u1', name: 'Max' },
-  { id: 'u2', name: 'Manuel' },
-  { id: 'u3', name: 'Julie' },
-];
-
 class UserFinder extends Component {
     static contextType = UsersContext;
 
     constructor() {
         super();
         this.state = {
-            filteredUsers: this.context.users,
+            filteredUsers: [],
             searchTerm: ''
         }
     }
@@ -40,9 +34,6 @@ class UserFinder extends Component {
     render() {
         return (
             <Fragment>
-                <UsersContext.Consumer>
-
-                </UsersContext.Consumer>
               <div className={classes.finder}>
                 <input type='search' onChange={this.searchChangeHandler.bind(this)} />
               </div>
