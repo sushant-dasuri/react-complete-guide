@@ -10,3 +10,8 @@ body {
   margin: 0;
   background-color: #272727;
 }
+
+html, body {
+  overflow: auto;
+  height: 100%;
+}
