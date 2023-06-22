@@ -13,3 +13,7 @@ body {
   background-color: #3f3f3f;
 }
 
+html, body {
+  overflow: auto;
+  height: 100%;
+}
