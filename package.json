@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.6.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.1.1",
     "react-scripts": "^5.0.1",
+    "redux": "^4.2.1",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -34,5 +36,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushant-dasuri/react-complete-guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushant-dasuri/react-complete-guide/issues"
+  },
+  "homepage": "https://github.com/sushant-dasuri/react-complete-guide#readme",
+  "description": ""
 }
