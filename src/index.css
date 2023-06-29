@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow: auto;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
