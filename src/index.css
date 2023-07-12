@@ -8,6 +8,11 @@ html {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+html, body {
+  overflow: auto;
+  height: 100%;
+}
+
 body {
   margin: 0;
   background-color: #3f3f3f;
