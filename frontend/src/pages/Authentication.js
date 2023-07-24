@@ -43,6 +43,5 @@ export async function action({ request }) {
 
   localStorage.setItem('token', token);
 
-  // soon: manage that token
   return redirect('/');
 }
