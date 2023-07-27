@@ -18,8 +18,16 @@ const DUMMY_MEETUPS = [
   ];
 
 function HomePage() {
+
+  const [loadedMeetups, setloadedMeetups] = useState([]);
+
+  useEffect(() => {
+    setloadedMeetups(DUMMY_MEETUPS);
+  }, [])
+
+
     return (
-        <MeetupList meetups={DUMMY_MEETUPS} />
+        <MeetupList meetups={loadedMeetups} />
     )
 }
 
