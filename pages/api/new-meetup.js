@@ -5,7 +5,7 @@ async function handler(req, res) {
         const data = req.body;
 
         const client = await MongoClient.connect('mongodb+srv://sushant1184:ArOy330qbGLQueMn@cluster0.avdfjlp.mongodb.net/meetups?retryWrites=true&w=majority');
-        const db = cleint.db();
+        const db = client.db();
 
         const meetupsCollection = db.collection('meetups');
         const result = await meetupsCollection.insertOne(data);
