@@ -5,7 +5,6 @@ import { useStore } from '../hooks-store/store';
 import './Products.css';
 
 const Favorites = props => {
-
   const state = useStore()[0];
   const favoriteProducts = state.products.filter(p => p.isFavorite);
   let content = <p className="placeholder">Got no favorites yet!</p>;
