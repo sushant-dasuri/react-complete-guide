@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 
-const NewTodo = () => {
+const NewTodo: React.FC<{onAddTodo: (text: string) => void}> = (props) => {
 
     const todoTextInputRef = useRef<HTMLInputElement>(null)
 
@@ -12,6 +12,8 @@ const NewTodo = () => {
         if(enteredText.trim().length === 0) {
             return;
         }
+
+        props.onAddTodo(enteredText);
     }
 
     return (
